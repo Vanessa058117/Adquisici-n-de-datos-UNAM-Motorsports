@@ -3,8 +3,8 @@ const int pinSensor1 = 34;
 const int pinSensor2 = 35; 
 const int pinAlerta = 2;   
 
-const int MIN_ADC_S1 = 300,  MAX_ADC_S1 = 3800;
-const int MIN_ADC_S2 = 1500, MAX_ADC_S2 = 3200;
+const int MIN_ADC_S1 = 0, MAX_ADC_S1 = 4095;
+const int MIN_ADC_S2 = 0, MAX_ADC_S2 = 4095;
 
 unsigned long tiempoFalla = 0;
 bool fallaActiva = false;
