@@ -55,6 +55,9 @@ Ventana de Falla: 100 milisegundos de tolerancia antes de bloquear el motor.
 
 ---
 
+<img width="1525" height="553" alt="Screenshot 2026-07-23 060939" src="https://github.com/user-attachments/assets/a018bb16-b5ad-4d27-9106-897fcc32971d" />
+
+---
 ##  Procedimiento
 
 El flujo del programa (bucle `loop`) realiza las siguientes tareas de seguridad en tiempo real:
