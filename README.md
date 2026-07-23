@@ -57,6 +57,8 @@ Ventana de Falla: 100 milisegundos de tolerancia antes de bloquear el motor.
 
 <img width="1525" height="553" alt="Screenshot 2026-07-23 060939" src="https://github.com/user-attachments/assets/a018bb16-b5ad-4d27-9106-897fcc32971d" />
 
+https://www.tinkercad.com/things/3qEdyWaBwP8-daq?sharecode=i2WkwMANtqZJuGhwrc2wQNF1PIR_lNVUewsI70TCpMw
+
 ---
 ##  Procedimiento
 
