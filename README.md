@@ -107,7 +107,7 @@ Este script está enfocado en la limpieza de datos de sensores y la extracción 
 4. Detección de Caída del Sensor: Realiza una búsqueda eficiente de ceros absolutos (`accel_x == 0.0`), que en la realidad suele indicar una pérdida de conexión, caída de alimentación del sensor o saturación del bus de datos, imprimiendo el momento exacto en que falló.
 5. Detección Aislada de Plausibilidad: Este bloque agrupa los errores (con `.shift().cumsum()`) para aislar los "eventos" (bloques donde el error ocurre sin interrupción). Si el bloque de error dura más de 10 registros de tiempo consecutivos, lanza una alerta por consola advirtiendo entre qué segundos ocurrió la falla de plausibilidad de los pedales.
 
-## II.I Dashboard Interactivo de Telemetría (Streamlit)
+## II.I. Dashboard Interactivo de Telemetría (Streamlit)
 **Archivo** `app.py`
 Este script crea una aplicación web interactiva que permite a los ingenieros inspeccionar el comportamiento de los pedales en ventanas de tiempo específicas.
 
@@ -125,7 +125,7 @@ Este script crea una aplicación web interactiva que permite a los ingenieros in
 1. Para correr el análisis y obtener el diagrama G-G:
    En la terminal se ejecuta:
    ```bash
-   python analisis_dinamico.py
+   python script_analysis_main.py
    ```
 
 2. Para lanzar el Dashboard interactivo:
