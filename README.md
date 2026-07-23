@@ -1,4 +1,4 @@
-# DATA-ACQUISITION-UM
+# Adquisicion de datos UNAM Motorsports
 Sistemas de seguridad para el pedal de aceleración siguiendo la Regla T.4.2 de FSAE (Accelerator Pedal Position Sensor - APPS)  y diagnostico de telemetría y detección de anomalías.
 
 ## Proyecto de Telemetría y Análisis Dinámico - Fórmula SAE (DAQ)
