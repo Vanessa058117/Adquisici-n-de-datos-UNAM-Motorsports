@@ -115,23 +115,25 @@ Este script crea una aplicación web interactiva que permite a los ingenieros in
 
 ### Configuración Inicial
 1. Caché: Se configura la página de Streamlit y se utiliza `@st.cache_data` para cargar el CSV una sola vez, optimizando el rendimiento.
-2. Validación de plausibilidad: La regla de Fórmula SAE dicta que si el piloto acelera (Throttle > 90%) y frena (Brake > 90%) simultáneamente durante un tiempo prolongado (en este caso validado por una ventana rodante de 10 muestras), el sistema debe cortar la potencia. El código crea la columna `plausibility_error` que marca estas infracciones.
+2. Validación de plausibilidad: La regla de Fórmula SAE dicta que si el piloto acelera (Throttle > 90%) y frena (Brake > 90%) simultáneamente durante un tiempo prolongado (en este caso validado por una ventana
+   rodante de 10 muestras), el sistema debe cortar la potencia. El código crea la columna `plausibility_error` que marca estas infracciones.
 3. Navegación en el Tiempo: Un control deslizante (`st.slider`) permite navegar a lo largo de toda la duración de la telemetría.
 4. Ventana Dinámica: Para no saturar el gráfico, el código recorta un segmento temporal de 3 segundos (`t_actual` a `t_actual + 3.0`) para analizar a detalle.
 5. Alertas Visuales: Mediante `st.error` y `st.success`, el dashboard advierte inmediatamente en pantalla si en la ventana actual ocurre una violación de plausibilidad.
 6. Gráfica Plotly: Construye una gráfica interactiva (zoom, hover) que cruza el porcentaje del acelerador y la presión de freno a lo largo del tiempo, facilitando la identificación visual de la anomalía.
+
 ---
 
 ## Comandos
 
 1. Para correr el análisis y obtener el diagrama G-G:
    En la terminal se ejecuta:
-   ```bash
+   ```
    python script_analysis_main.py
    ```
 
 2. Para lanzar el Dashboard interactivo:
-   Se ejecuta este comando en una terminal:
-   ```bash
+   Se ejecuta este comando en la terminal:
+   ```
    streamlit run dashboard_telemetria.py
    ```
