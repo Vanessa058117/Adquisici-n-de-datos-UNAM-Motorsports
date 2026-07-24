@@ -6,6 +6,13 @@ Sistemas de seguridad para el pedal de aceleración siguiendo la Regla T.4.2 de 
 Este repositorio contiene los scripts desarrollados para el sistema de adquisición de datos (DAQ) y telemetría de un vehículo de Fórmula SAE. El objetivo principal es visualizar, filtrar y analizar datos dinámicos del monoplaza, con especial enfoque en la validación de la regla de seguridad T.4.2 (Plausibilidad APPS/Freno) y el análisis de aceleración.
 
 
+## Descripción de los proyectos
+
+Se hicieron 2: El Sistema de Validación de Plausibilidad APPS y el Diagnóstico de Telemetría y Detección de
+Anomalías.
+
+---
+
 ## Requisitos
 
 Para ejecutar los scripts, se necesita tener instalado Python y las siguientes librerías:
@@ -13,11 +20,6 @@ Para ejecutar los scripts, se necesita tener instalado Python y las siguientes l
 pip install streamlit pandas plotly numpy matplotlib scipy
 ```
 ---
-
-## Descripción de los proyectos
-
-Se hicieron 2: El Sistema de Validación de Plausibilidad APPS y el Diagnóstico de Telemetría y Detección de
-Anomalías.
 
 # I. El Sistema de Validación de Plausibilidad APPS.
 Este sistema se diseñó para el control a bajo nivel del Sensor de Posición del Pedal del Acelerador (APPS). Su propósito principal es garantizar la seguridad del vehículo leyendo dos sensores redundantes y cortando la potencia del motor si se detecta una anomalía, cumpliendo con la normativa de seguridad de Fórmula SAE.
